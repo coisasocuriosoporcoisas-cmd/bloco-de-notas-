@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+     <link rel="icon" type="image/x-icon"href="icon/ic.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="conteudo_css/coloracao.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="Bann">
+        <h2>Bloco-virtual</h2>
+    </div>
+
+    <button class = "butao_princ"type="button" id="but" onclick="prepararNovaNota()"></button>
+
+    <div class="escrev" style="display: none;">
+        <button class="btn-fechar-icon" onclick="alternarMenuNota()">&#10006;</button>
+        
+        <textarea id="tt_nota" placeholder="Título da sua nota" oninput="atualizar()"></textarea>
+        <textarea id="nota" placeholder="Escreva sua nota aqui..." oninput="atualizar()"></textarea> 
+    </div>
+
+    <div id="salva_nota"></div>
+
+    <script src="arq_jv/copot.js"></script>
+</body>
+</html>
